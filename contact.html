@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Get in touch with Anything." />
+    <title>Contact — Anything</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
+    <!-- Meta Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '2326796294842679');
+      fbq('track', 'PageView');
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=2326796294842679&ev=PageView&noscript=1"
+        alt=""
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html"
+        ><span class="brand-mark">a<span>.</span></span
+        ><span>anything</span></a
+      ><button
+        class="menu-toggle"
+        aria-label="Open navigation"
+        aria-expanded="false"
+      >
+        <span></span><span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a><a href="about.html">About</a
+        ><a class="active" href="contact.html">Contact</a
+        ><a class="nav-cta" href="about.html">Our story <span>↗</span></a>
+      </nav>
+    </header>
+    <main>
+      <section class="contact-hero wrap">
+        <div class="contact-intro">
+          <div class="eyebrow">
+            <span class="eyebrow-line"></span> THE INBOX IS OPEN
+          </div>
+          <h1>Well, hello<br /><span class="highlight">there.</span></h1>
+          <p class="page-lede">
+            Got a question, an idea, or just feel like saying hi? We'd be happy
+            to hear from you.
+          </p>
+          <div class="contact-aside-note">
+            <span class="contact-note-icon">↘</span>
+            <p>No pitch too rough.<br />No question too small.</p>
+          </div>
+          <div class="contact-scribble">✳</div>
+        </div>
+        <div class="contact-panel">
+          <div class="panel-heading">
+            <span class="panel-kicker">SEND A LITTLE NOTE</span
+            ><span class="panel-number">01 — 01</span>
+          </div>
+          <form
+            id="contact-form"
+            class="contact-form"
+            name="contact"
+            method="POST"
+            action="/thank-you"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+          >
+            <p class="form-honeypot" aria-hidden="true">
+              <label
+                >Don't fill this out if you're human:
+                <input name="bot-field" tabindex="-1" autocomplete="off"
+              /></label>
+            </p>
+            <div class="form-row">
+              <label for="name">Your name <span>*</span></label
+              ><input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="What should we call you?"
+                autocomplete="name"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <label for="email">Email address <span>*</span></label
+              ><input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="you@example.com"
+                autocomplete="email"
+                required
+              />
+            </div>
+            <div class="form-row">
+              <label for="subject">What's this about?</label
+              ><select id="subject" name="subject">
+                <option value="A quick hello">A quick hello</option>
+                <option value="A question">A question</option>
+                <option value="An idea">An idea</option>
+                <option value="Something else">Something else</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="message">Your message <span>*</span></label
+              ><textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Tell us what's on your mind..."
+                required
+              ></textarea>
+            </div>
+            <button class="button button-dark form-submit" type="submit">
+              Send your message <span>↗</span>
+            </button>
+            <p class="form-privacy">
+              By sending this form, you're agreeing to our
+              <a href="privacy.html">privacy policy</a>.
+            </p>
+            <div
+              class="form-feedback"
+              id="form-feedback"
+              role="status"
+              aria-live="polite"
+            ></div>
+          </form>
+        </div>
+      </section>
+      <section class="contact-bottom">
+        <div class="wrap contact-bottom-inner">
+          <span class="contact-bottom-star">✳</span>
+          <div>
+            <span class="footer-label">PREFER THE DETAILS?</span>
+            <h2>We're all ears.</h2>
+            <p>
+              Every note lands straight in our inbox, and a real person reads
+              each one. We usually reply within a couple of days.
+            </p>
+          </div>
+          <a class="text-link" href="about.html"
+            >More about Anything <span>↗</span></a
+          >
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-main wrap">
+        <div class="footer-brand">
+          <a class="brand brand-light" href="index.html"
+            ><span class="brand-mark">a<span>.</span></span
+            ><span>anything</span></a
+          >
+          <p>A little space for big possibilities.</p>
+        </div>
+        <div class="footer-column">
+          <span class="footer-label">EXPLORE</span><a href="index.html">Home</a
+          ><a href="about.html">About</a><a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-column">
+          <span class="footer-label">THE DETAILS</span
+          ><a href="privacy.html">Privacy policy</a
+          ><a href="terms.html">Terms & conditions</a>
+        </div>
+        <div class="footer-note">
+          <span class="footer-label">KEEP AN OPEN MIND</span>
+          <div class="footer-stamp">
+            ANYTHING<br />IS POSSIBLE <span>✳</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom wrap">
+        <span>© <span data-year>2026</span> Anything. Made with curiosity.</span
+        ><a href="index.html">Back home ↗</a
+        ><span>Made for the in-between.</span>
+      </div>
+    </footer>
+  </body>
+</html>
